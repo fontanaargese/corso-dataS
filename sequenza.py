@@ -6,7 +6,7 @@ def sequenza():
     while counter:
         elemento=seq[-1]+seq[-2]
         seq.append(elemento)
-        if seq[-1]>100:
+        if seq[-1]>numero:
             break
         print(seq[-1])
 sequenza()
