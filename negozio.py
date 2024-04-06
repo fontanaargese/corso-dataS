@@ -98,9 +98,9 @@ else:
                     inventario[2][2]=inventario[2][2]-quantità #aggiorno il mio inventario
                     acquisti.append([inventario[2][0],quantità,conto]) #aggiungo alla lista degli acquisti
             print(acquisti)
-            altro=input("vuoi fare altro:? ")
-            if altro=="no":
-                counter=False
+        altro=input("vuoi fare altro:?(0 si)(1=no) ")
+        if altro=="no":
+            counter=False
 
                     
 
