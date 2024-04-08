@@ -66,25 +66,24 @@ print(lista_ristoranti)
 while True:
         ristorante=input("ciao. Inserisci il nome del ristorante che vuoi cercare: ")
         for i, ristorante in zip(lista_oggetti,lista_ristoranti):
-            
-                action=int(input("cosa vuoi fare?(1:descrizione, 2:status, 3:apri, 4:chiudi, 5:menu) "))
-                if action==1:
-                    i.descrivi_ristorante()
-                elif action==2:
-                    i.stato_apertura()
-                elif action==3:
-                    i.apri_ristorante()
-                elif action==4:
-                    i.chiudi_ristorante()
+            action=int(input("cosa vuoi fare?(1:descrizione, 2:status, 3:apri, 4:chiudi, 5:menu) "))
+            if action==1:
+                i.descrivi_ristorante()
+            elif action==2:
+                i.stato_apertura()
+            elif action==3:
+                i.apri_ristorante()
+            elif action==4:
+                i.chiudi_ristorante()
+            else:
+                cosa=int(input("cosa vuoi fare? (1:aggiungere, 2:modificare)"))
+                if cosa==1:
+                    i.aggiungi_al_menu()
                 else:
-                    cosa=int(input("cosa vuoi fare? (1:aggiungere, 2:modificare)"))
-                    if cosa==1:
-                        i.aggiungi_al_menu()
-                    else:
-                        i.rimuovi_dal_menu()
+                    i.rimuovi_dal_menu()
 
-                again=int(input("vuoi cercare un altro ristorante?:(1:si, 2:no) "))
-                if again=="no":
-                    break
+            again=int(input("vuoi cercare un altro ristorante?:(1:si, 2:no) "))
+            if again==2:
+                break
             
   
